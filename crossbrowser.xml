@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" thread-count="5" >
+ 
+  	
+  <test name="chrometest">
+  
+  	<parameter name="os" value="Windows" />
+   	 <parameter name="browser"  value="chrome"/> 
+    <classes>
+		<class name ="testing.TC001_Doctor_Details"/>
+		<class name ="testing.TC002_Surgeries"/>
+		<class name ="testing.TC003_Set_Wrong_Details"/>
+      	<class name ="testing.TC004_Set_Correct_Details"/>
+		</classes>
+  </test> 
+  
+  <test name="edgetest"> 
+  	 
+  	<parameter name="os"  value="Windows"/> 
+  	<parameter name="browser"  value="edge"/>
+    <classes>
+		<class name ="testing.TC001_Doctor_Details"/> 
+		<class name ="testing.TC002_Surgeries"/>
+		<class name ="testing.TC003_Set_Wrong_Details"/>
+      	<class name ="testing.TC004_Set_Correct_Details"/>
+		</classes>
+  </test> 
+  
+  
+</suite> <!-- Suite -->

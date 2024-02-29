@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<suite name="Suite" >
+
+<listeners>
+<listener class-name="Listener.ExtentReport"></listener>
+</listeners>
+
+<parameter name="os" value="Windows" />
+<parameter name="browser"  value="chrome"/>
+
+  <test thread-count="5" name="Test">
+	  <groups>
+		<run>
+			<include name="sanity" /> 
+		</run> 
+	</groups>
+
+    <classes>
+		<!-- <class name ="testing.TC001_Doctor_Details"/>
+		<class name ="testing.TC002_Surgeries"/> -->
+		<class name ="testing.TC003_Set_Wrong_Details"/>
+      	<class name ="testing.TC004_Set_Correct_Details"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
